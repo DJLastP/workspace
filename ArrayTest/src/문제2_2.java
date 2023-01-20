@@ -4,12 +4,11 @@
 public class 문제2_2 {
     public static void main(String[] args) {
         int[] arr;
+        int sum = 0;
         arr = new int[100];
                 for(int i = 0; i < 100; i++){            //배열에 1~100 넣기
             arr[i] = i + 1;
         }
-
-
 
         for(int i = 1; i < 100; i++){       //소수인지 확인
             int cnt = 0;
@@ -20,10 +19,13 @@ public class 문제2_2 {
             }
                 if (cnt == 2) {
                     System.out.print(" " + arr[i]);
+                    ++sum;
 
                 }
 
         }
+        System.out.println("");
+        System.out.println("소수는 " + sum + "개입니다.");
 
     }
 }
