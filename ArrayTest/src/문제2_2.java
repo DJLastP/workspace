@@ -6,17 +6,18 @@ public class 문제2_2 {
         int[] arr;
         int sum = 0;
         arr = new int[100];
-                for(int i = 0; i < 100; i++){            //배열에 1~100 넣기
+        for(int i = 0; i < arr.length; i++){            //배열에 1~100 넣기
             arr[i] = i + 1;
         }
 
-        for(int i = 1; i < 100; i++){       //소수인지 확인
-            int cnt = 0;
-            for(int j = 1 ; j < 100; j++) {
-                if (arr[i] % j == 0) {
-                    cnt = cnt + 1;
+        for(int i = 1; i < arr.length; i++){        //소수인지 확인
+            int cnt = 0;                            //나누어떨어지는 경우를 저장하는변수
+            for(int j = 1; j < arr.length; j++) {      //배열의값을 1부터 배열의값까지 나눈다
+                if (arr[i] % j == 0) {            // 배열값을 1부터 배열값까지 나눈 나머지가 0 일경우에
+                    cnt++;                          //cnt 함수에 1을추가한다
                 }
             }
+            for(int e : arr)
                 if (cnt == 2) {
                     System.out.print(" " + arr[i]);
                     ++sum;
@@ -24,7 +25,7 @@ public class 문제2_2 {
                 }
 
         }
-        System.out.println("");
+        System.out.println(" ");
         System.out.println("소수는 " + sum + "개입니다.");
 
     }
