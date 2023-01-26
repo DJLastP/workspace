@@ -5,6 +5,7 @@ public class 문제1_6 {
         test1_6(2,2,2);
     }
     public static void test1_6(int num1,int num2,int num3){
+
         System.out.println(num1 * num2 * num3);
     }
 }

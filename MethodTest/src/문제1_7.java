@@ -2,6 +2,7 @@
 
 public class 문제1_7 {
     public static void main(String[] args) {
+
         test1_7(4,2);
     }
     public static void test1_7(int num1, int num2){

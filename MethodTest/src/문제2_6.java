@@ -8,6 +8,12 @@ public class 문제2_6 {
 
     public static String test6(int a){
         String b = ""+a;
+        //문자열 -> 정수
+        //int aa = Integer.parseInt("6");
+
+        //정수   -> 문자열로
+        //String bb = String.valueOf(10);
+
 
         return b;
     }

@@ -14,7 +14,9 @@ public class 문제1_17 {
     }
 
     public static void test17(int num1, int num2){
-        for(int i = num1; i <= num2; i++){
+        int fromNum = num1 >= num2 ? num2: num1;
+        int toNum = num1 >= num2 ? num1: num2;
+        for(int i = fromNum; i <= toNum; i++){
             System.out.print(i+ " ");
         }
     }

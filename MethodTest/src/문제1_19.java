@@ -13,4 +13,10 @@ public class 문제1_19 {
             System.out.println(b);
         }
     }
+    public static void test19_1(String str, int num){
+        String result = "";
+        for(int i = 0; i < num ; i++){
+            result += str;
+        }
+    }
 }
