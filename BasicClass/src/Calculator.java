@@ -12,6 +12,18 @@ public class Calculator {
         a = a1;
     }
 
+    public int getNum1(){
+        return num1;
+    }
+    public int getNum2(){
+        return num2;
+    }
+    public String getA(){
+        return a;
+    }
+
+
+
     public int sum(){
         return num1 + num2;
     }
@@ -21,7 +33,7 @@ public class Calculator {
     public int mul(){
         return num1 * num2;
     }
-    public int dev(){
+    public double dev(){
         return num1 / num2;
     }
 }

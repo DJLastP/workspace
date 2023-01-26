@@ -15,18 +15,18 @@ public class CalculatorTest {
         System.out.print("연산자 : " );
         cal.setA(sc.next());
 
-        if (cal.a == "+"){
-            System.out.println(cal.sum());
-            System.out.println(cal.num1 + " " + cal.a + " " + cal.num2 + " = " + cal.sum());
+
+        if (cal.a.equals("+")){
+            System.out.println(cal.getNum1() + " " + cal.getA() + " " + cal.getNum2() + " = " + cal.sum());
         }
-        else if (cal.a == "-"){
-            System.out.println(cal.num1 + " " + cal.a +" "+ cal.num2 + " = " + cal.min());
+        else if (cal.a.equals("-")){
+            System.out.println(cal.getNum1() + " " + cal.getA() + " " + cal.getNum2() + " = " + cal.min());
         }
-        else if (cal.a == "*"){
-            System.out.println(cal.num1 + " " + cal.a +" "+ cal.num2 + " = " + cal.mul());
+        else if (cal.a.equals("*")){
+            System.out.println(cal.getNum1() + " " + cal.getA() + " " + cal.getNum2() + " = " + cal.mul());
         }
-        else if (cal.a == "/"){
-            System.out.println(cal.num1 + " " + cal.a +" "+ cal.num2 + " = " + cal.dev());
+        else if (cal.a.equals("/")){
+            System.out.println(cal.getNum1() + " " + cal.getA() + " " + cal.getNum2() + " = " + cal.dev());
         }
 
 
