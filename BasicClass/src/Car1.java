@@ -30,7 +30,7 @@ public class Car1 {
         owner = owner1;
     }
 
-    public void print(){
+    public void printCarInfo(){
         System.out.println("제조사 : " + madeBy);
         System.out.println("차이름 : " + carName);
         System.out.println("차량번호 : " + carNum);

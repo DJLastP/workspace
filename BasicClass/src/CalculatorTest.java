@@ -15,18 +15,20 @@ public class CalculatorTest {
         System.out.print("연산자 : " );
         cal.setA(sc.next());
 
-
         if (cal.a.equals("+")){
-            System.out.println(cal.getNum1() + " " + cal.getA() + " " + cal.getNum2() + " = " + cal.sum());
+            cal.getSum();;
         }
         else if (cal.a.equals("-")){
-            System.out.println(cal.getNum1() + " " + cal.getA() + " " + cal.getNum2() + " = " + cal.min());
+            cal.getMin();
         }
         else if (cal.a.equals("*")){
-            System.out.println(cal.getNum1() + " " + cal.getA() + " " + cal.getNum2() + " = " + cal.mul());
+            cal.getMul();
         }
         else if (cal.a.equals("/")){
-            System.out.println(cal.getNum1() + " " + cal.getA() + " " + cal.getNum2() + " = " + cal.dev());
+            cal.getDev();
+        }
+        else {
+            System.out.println("연산자를 잘못입력");
         }
 
 

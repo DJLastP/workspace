@@ -1,28 +1,29 @@
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Student {
-    String name, age, addr, id, num;
-    public void setInfo(String name1, String age1, String addr1, String id1, String num1){
-        name = name1;
-        age = age1;
-        addr = addr1;
-        id = id1;
-        num = num1;
+    private String name, age, addr, id, num;
+
+    public void setInfo(String name, String age, String addr, String id1 String num){
+        this.name = name;
+        this.age = age;
+        this.addr = addr;
+        this.id = id;
+        this.num = num;
     }
-    public void setName(String name1){
-        name = name1;
+    public void setName(String name){
+        this.name = name;
     }
-    public void setAge(String age1){
-        age = age1;
+    public void setAge(String age){
+        this.age = age;
     }
-    public void setAddr(String addr1){
-        addr = addr1;
+    public void setAddr(String addr){
+        this.addr = addr;
     }
-    public void setId(String id1){
-        id = id1;
+    public void setId(String id){
+        this.id = id;
     }
-    public void setNum(String num1){
-        num = num1;
+    public void setNum(String num){
+        this.num = num;
     }
     public String reName(){
         return name;
