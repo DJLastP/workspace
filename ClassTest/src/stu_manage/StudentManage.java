@@ -87,4 +87,16 @@ public class StudentManage {
             break;
         }
     }
+
+    //모든 학생 정보 실행
+    public void showAll(){
+        for (int i = 0; i < students.length; i++){
+            System.out.print("이름 : " + students[i].getName());
+            System.out.print("나이 : " + students[i].getAge());
+            System.out.print("연락처 : " + students[i].getTell());
+            System.out.print("점수 : " + students[i].getGarde());
+        }
+    }
+
+
 }

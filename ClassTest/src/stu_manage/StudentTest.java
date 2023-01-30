@@ -24,7 +24,7 @@ public class StudentTest {
                     sm.showStuInfo();
                     break;
                 case 4 :
-                    System.out.println("모든 학생 정보 실행");
+                    sm.showAll();
                     break;
                 case 5 :
                     System.out.println("프로그램을 종료합니다.");
