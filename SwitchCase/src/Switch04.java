@@ -5,6 +5,7 @@ import java.util.Scanner;
 //7번째 숫자가 2 혹은 4이면 여자라고 출력
 //scanner를 사용해서 민번의 7번째 자리를 입력받아
 //문제를 해결
+
 public class Switch04 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

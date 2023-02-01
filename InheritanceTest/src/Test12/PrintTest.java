@@ -10,8 +10,7 @@ public class PrintTest {
         while (true) {
             System.out.println("1. 잉크젯 2. 레이저 3.종료");
             System.out.print("출력할 프린터 선택 : ");
-            int a = sc.nextInt();
-            switch (a) {
+            switch (sc.nextInt()) {
                 case 1:
                     razer.printInk();
                     break;

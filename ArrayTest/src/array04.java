@@ -15,8 +15,10 @@ public class array04 {
         for(int i = 0; i < arr1.length; i++){
             System.out.println(arr1[i]);
         }
-        int b = 0;
+
         //for-each문
+
+        int b = 0;
         for(int e : arr1){
             System.out.println(e);
         }

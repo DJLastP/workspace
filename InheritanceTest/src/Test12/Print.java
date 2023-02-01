@@ -55,7 +55,6 @@ class Razer extends Ink {
         this.razer = 100;
     }
 
-
     public void printRazer() {
         System.out.println("레이저프린트 출력");
         super.setPaper(super.getPaper() - 1);
