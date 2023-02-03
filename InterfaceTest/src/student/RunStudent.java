@@ -11,6 +11,7 @@ public class RunStudent {
         StudentTest s = new StudentTest();
 
         String result = s.getGradeByStudentName(stu,"김");
+        System.out.println(result);
 
 
 

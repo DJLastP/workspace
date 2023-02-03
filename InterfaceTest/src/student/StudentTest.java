@@ -12,9 +12,10 @@ public class StudentTest implements StudentUtil {
 
         int sum = 0;
         String a = "";
-        for (int j = 0; j < studentName.length; j++) {
-            if (studentName[j].getName().equals(name)) {
-                sum = (studentName[j].getEngScore() + studentName[j].getKorScore() + studentName[j].getMathScore()) / 3;
+        for (int i = 0; i < studentName.length; i++) {
+            if (studentName[i].getName().equals(name)) {
+                sum = (studentName[i].getEngScore() + studentName[i].getKorScore() + studentName[i].getMathScore()) / 3;
+                break;
             } else {
                 a = "등급없음";
             }
