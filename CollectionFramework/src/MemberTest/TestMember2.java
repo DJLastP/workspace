@@ -15,24 +15,30 @@ public class TestMember2 {
             switch (sc.nextInt()) {
                 case 1 :
                     Member1 mem = new Member1();
-                    mem.regMember();
                     list.add(mem);
                     break;
 
                 case 2 :
                     boolean a = true;
+                    boolean c = false;
+
                     while (a) {
+                        System.out.print("조회할 이름 : ");
+                        String b = sc.next();
                         for (int i = 0; i < list.size(); i++) {
-                            System.out.print("조회할 이름 : ");
-                            if (list.get(i).getName().equals(sc.next())) {
+                            if (list.get(i).getName().equals(b)) {
                                 System.out.println("회원이름 : " + list.get(i).getName());
                                 System.out.println("아이디 : " + list.get(i).getId());
                                 System.out.println("비밀번호 : " + list.get(i).getPw());
                                 a = false;
-                            } else {
-                                System.out.println("정보가 일치하는 회원이 없습니다.");
+                                c  = true;
+                                break;
                             }
                         }
+                            if (c = false) {
+                                System.out.println("정보가 일치하는 회원이 없습니다.");
+                            }
+
                     }
                     break;
 
@@ -43,6 +49,7 @@ public class TestMember2 {
                     }
                     break;
                 case 4 :
+
                     a = true;
                     while (a) {
                         for (int i = 0; i < list.size(); i++) {
@@ -51,9 +58,9 @@ public class TestMember2 {
                                 System.out.println(list.get(i).getName() + "회원을 삭제하였습니다");
                                 list.remove(i);
                                 a = false;
-                            } else {
-                                System.out.println("정보가 일치하는 회원이 없습니다.");
                             }
+                            System.out.println("정보가 일치하는 회원이 없습니다.");
+
                         }
                     }
                     break;

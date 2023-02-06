@@ -9,7 +9,8 @@ public class Member1 {
     private String pw;
     Scanner sc = new Scanner(System.in);
 
-    public void regMember(){
+
+    public Member1() {
 
         System.out.print("회원이름 : ");
         this.name = sc.next();
